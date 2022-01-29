@@ -1,0 +1,23 @@
+header.header
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 150px;
+    padding: 30px;
+
+    background-color: $sky;
+
+    .note
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .logo-top
+    {
+        font-size: 24px;
+    }
+}

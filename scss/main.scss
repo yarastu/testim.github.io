@@ -1,0 +1,23 @@
+@import '_normalize', '_vars', '_header', '_nav', '_index', '_footer', '_text', '_archive', '_tags', '_article';
+
+html
+{
+    box-sizing: border-box;
+    height: 100%;
+
+    color: $green;
+
+    background: $minima;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main
+{
+    flex-grow: 1;
+}

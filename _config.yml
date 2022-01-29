@@ -1,0 +1,55 @@
+# http://www.yamllint.com/
+--- 
+collections: 
+  posts: 
+    output: true
+    permalink: "/:title/"
+  videos: ~
+exclude: 
+  - package.json
+  - package-lock.json
+  - node_modules
+  - gulpfile.js
+  - scss
+  - .csscomb.json
+menu: 
+  - 
+    name: main
+    submenu: 
+      - 
+        name: archive
+        url: /archive/
+      - 
+        name: tags
+        url: /tags/
+    url: /
+  - 
+    name: text
+    url: /text/
+  - 
+    name: video
+    url: /video/
+  - 
+    name: audio
+    submenu: 
+      - 
+        name: podcast
+        submenu: 
+          - 
+            name: season1
+            url: /audio/
+          - 
+            name: season2
+            url: /audio/
+        url: /audio/
+      - 
+        name: music
+        url: /audio/
+    url: /audio/
+paginate: 3
+paginate_path: "/:num/"
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+timezone: Europe/Moscow

@@ -1,0 +1,23 @@
+---
+permalink: video/
+layout: default
+---
+
+<h1>Видео</h1>
+
+<ul>
+{% for video in site.videos %}
+  <li>{{video.name}}</li>
+  <span>Длительность: {{video.duration}}</span>
+{% endfor %}
+</ul>
+
+<h2>Наши авторы</h2>
+<ul>
+{% for authorsvideos in site.data.authorsvideos %}
+  <li>
+    <h4>{{authorsvideos.name}}</h4>
+    <p>{{authorsvideos.bio}}</p>
+  </li>
+{% endfor %}
+</ul>d

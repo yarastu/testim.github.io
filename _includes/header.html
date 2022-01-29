@@ -1,0 +1,9 @@
+<header class="header">
+	<div class="logo-top">Это сайт</div>
+	{% include nav.html class="menu-top" %}
+	
+	{% if page.url == "/" %}
+	  <div class="note">Новый сайт заработает в полную силу со следующего месяца! Просьба сообщить о багах админу.</div>	
+	{% endif %}
+
+</header>

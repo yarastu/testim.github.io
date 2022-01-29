@@ -1,0 +1,62 @@
+nav.menu-top
+{
+    ul
+    {
+        padding: 0;
+
+        li
+        {
+            position: relative;
+
+            display: inline-block;
+            margin: 0 10px;
+
+            font-size: 15px;
+
+            &.active
+            {
+                border-bottom: 2px solid red;
+            }
+
+            &:hover > .submenu,
+            &:hover > .horisont-submenu
+            {
+                visibility: visible;
+            }
+
+            a
+            {
+                color: $green;
+
+                text-decoration: none;
+
+                &:hover
+                {
+                    border-bottom: 2px solid $red;
+                }
+            }
+
+            .submenu
+            {
+                position: absolute;
+
+                visibility: hidden;
+
+                & li
+                {
+                    margin: 0;
+                }
+            }
+        }
+
+        .horisont-submenu
+        {
+            position: absolute;
+            top: 0;
+            left: 100%;
+
+            visibility: hidden;
+            padding-left: 10px;
+        }
+    }
+}
